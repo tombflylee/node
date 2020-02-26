@@ -1,1 +1,85 @@
-<mxfile host="www.draw.io" modified="2020-02-25T09:28:59.643Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36" etag="_gyC8lIYXN2kX88EzaGB" version="12.7.4" type="github"><diagram id="naeNLB5IFIbRUQMj_z2z" name="Page-1">7Vrfb6M4EP5rLN097ApjfvkRErKnk1a3Uh+6fVq5wUnQUsgR0qT319/Y2GAgUbJRGiJ1pUq1x+PxeOb7xgaCyORl/6Vk69XXIuEZsq1kj8gU2Ta2fAL/hOStlngWrgXLMk2UUit4SP/jeqaSbtOEbzqKVVFkVbruCudFnvN51ZGxsix2XbVFkXVXXbMlHwge5iwbSh/TpFopqWf77cBfPF2u9NLYo/XIC9PaaiubFUuKnSEiMSKTsiiquvWyn/BMRE8Hpp43OzLaeFbyvDpnwvbb1skL94FMccJmq6eH57+dT8rKK8u2ase7Mq248rh603Eoi22ecGHJQiTarUDnYc3mYnQHmQfZqnrJoIehqWzysuL7o87iJgQAHl688Kp8AxU1waYqago3NlH9nZEFDZKVkQBPyZhK/LIx3YYGGio6vxAp+3Ck/imj7WLByz/+HD1mTnA6ZvZNY0YGMRsEiedJKHgKvXnGNpt03o0L36fVd6P9JML52VW96V5FV3bedCcH57+bHWOW6LbTZE/Pq53jyaAk9DIAGyi25Zyf5lXFyiWvTqFqmFEjY+6BhGlZyTNWpa9ddw9lUa3wrUhhIw1gSA8wxO4Bod6mmmWWlp4hh/SQ5/cM1XEYGJKgarZ9Oc7cAc6S4vEu6pjvdCOD7QN1zL4lJ73rcbLl4ZNJw3vlpH0mJ90xOenZV+Kk51/GScg8ezPU1kJhc9xhN3C7CHc71xBo1BavSnh/AOIf8jS+g1OYevfG+ODDnsLumYz3Rz2FvRNEPfsU7t+Zb3wK0wHOivxeWInx3R3E+ib+AXnpn8lLOiYvg94BivtIOJeX9JShd+YlHj7ks0XFy8d74Sax746bw6f9j8JNeiY38ZGk3oac2KJXYifWF9bR6Dl8SzLPOLuf90qDs9N2Ruencz1+dp9i8Zn8bCn5ZI7dET/Jb35eh5/Dt0uXY+2is6CLNXzDt5jkTLCN+spk9Ivar74yCazDD2rv+soEH3rx52WQiihJXztw9v7dio9SERwZ1SeWpcsckRA0Mr6o2lFoLdV/aWWzZrmW4c+gjmIXBS4KXdmYoZDU35ZEz0fRFMUeoi6KQHGGogkKJigOUDRD1BE6NEI0rkpwNnZQFMF0MRxiFAbP8miUcpCAIR/REAWOYdFDwRSFsbYYyKEJCkMpicWf8APa1goQ+cjgQvyVlT+VL7A4DIdgxZYzYzF54N2CZRtueN/3UyhGsFVbeAhDEAQwJnSwVAafvXZBFUfIrhlKQyzz1JVeP3Va9lwe8GBMx2yNqW5WNBaOxDWQSQAsRORE/qgUWyiIm4xq2xK+whLk1UZhJFcLBLghryEVCx5YdohFVyhQ2iEGyAV0PBTOhH7rjImqicC3WN0Xu6/9obBXGwUWgDspWZrrHtW+RAqQ0W+MnesY0RiD6kSJfnl1DDeQS7+Nbp1FSDzFuhJMVImC9AubobQRiEyroiiRUdcGSK1qTOWCAEQiC5sDhUQVTqNMQqZFY2jVly5iBWbhwhGQNHXOEbsVyPVEnQQzNTwjT8GTxrqAz/TG3EucHvIBjFFEZwbED1mVlNNUbKzJfUZOU8WHdV1HuKbZVB4C5kExEZEQQ45ckYqoUEtPN5lc559KllqioosE2CpUIkKhsQUJnqhOAJH59cRCYT2LyINP7aJ38jThkGGqTYBzdQPKUhQZZcYT2whmalZbMOilZB/5KZP0rvnNx2njEukd+vUC7n8hu95T5vAzUx+GY0cNW72vB4S+37M5dNufK9X30vZXXyT+Hw==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-26T11:47:53.726Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36" etag="jhrlON5cvQOJPGwsu1YD" version="12.7.6" type="github">
+  <diagram id="naeNLB5IFIbRUQMj_z2z" name="Page-1">
+    <mxGraphModel dx="1072" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1627" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-1" value="write" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="230" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-2" value="writeOrBuffer()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="230" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-1" target="uPu4no5S3D1daFhYSbJ4-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="320" as="sourcePoint" />
+            <mxPoint x="430" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-5" value="doWrite" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-2" target="uPu4no5S3D1daFhYSbJ4-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="320" as="sourcePoint" />
+            <mxPoint x="670" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="585" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-7" value="_write()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-8" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-5" target="uPu4no5S3D1daFhYSbJ4-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="270" as="sourcePoint" />
+            <mxPoint x="490" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-9" value="onwrite()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-7" target="uPu4no5S3D1daFhYSbJ4-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="160" as="sourcePoint" />
+            <mxPoint x="970" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-11" value="afterWrite()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-12" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-9" target="uPu4no5S3D1daFhYSbJ4-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="160" as="sourcePoint" />
+            <mxPoint x="1150" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-13" value="clearBuffer()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-9" target="uPu4no5S3D1daFhYSbJ4-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="160" as="sourcePoint" />
+            <mxPoint x="1150" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-15" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-13" target="uPu4no5S3D1daFhYSbJ4-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="160" as="sourcePoint" />
+            <mxPoint x="970" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-16" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. 入口write函数，返回true代表buffer中的数据还未达到highWaterMark；如果返回false，代表已经满了；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. 如果buffer满了（即返回false）后，buffer又被清空了（数据写入完毕），会触发‘drain’事件；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. 当write()返回false时，我们不应该再继续调用write，而应该监听‘drain’；但是其实可以继续调用write，数据也会继续被buffer，直到达到内存的最大限制（这样肯定会影响性能，highWaterMark也就失去了意义）；&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="380" width="610" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-17" value="buffer，" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
