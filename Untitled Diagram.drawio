@@ -1,22 +1,44 @@
-<mxfile host="www.draw.io" modified="2020-02-27T02:11:29.078Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36" etag="zY0FU_2gd2-VFQCiilKT" version="12.7.8" type="github">
+<mxfile host="www.draw.io" modified="2020-02-27T06:58:46.458Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36" etag="6zhTwrhVS9h3xG_jH5TZ" version="12.7.8" type="github">
   <diagram id="naeNLB5IFIbRUQMj_z2z" name="Page-1">
-    <mxGraphModel dx="1008" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1627" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1398" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1627" pageHeight="1869" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-1" value="write" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="230" width="110" height="60" as="geometry" />
+        <mxCell id="s0zgl7CNudVJyAiepdLL-84" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;内部循环调用_write() ，将buffer中数据写入底层&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=#DAE8FC;dashed=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="730" y="30" width="520" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-2" value="writeOrBuffer()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="230" width="210" height="60" as="geometry" />
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-1" value="write(chunk)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="250" y="232" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-1" target="uPu4no5S3D1daFhYSbJ4-2" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="320" as="sourcePoint" />
-            <mxPoint x="430" y="270" as="targetPoint" />
+        <mxCell id="s0zgl7CNudVJyAiepdLL-54" value="底层writing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uPu4no5S3D1daFhYSbJ4-2" target="s0zgl7CNudVJyAiepdLL-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-56" value="&lt;span style=&quot;background-color: rgb(248 , 206 , 204)&quot;&gt;return buffer是否还有空间&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="uPu4no5S3D1daFhYSbJ4-2" target="uPu4no5S3D1daFhYSbJ4-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="277" />
+              <mxPoint x="470" y="277" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-5" value="doWrite" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-2" value="writeOrBuffer()&lt;br&gt;判断底层写操作是否结束" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="530" y="232" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-53" value="chunk放入buffer中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-1" target="uPu4no5S3D1daFhYSbJ4-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="322" as="sourcePoint" />
+            <mxPoint x="470" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-55" value="调用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="uPu4no5S3D1daFhYSbJ4-3">
+          <mxGeometry x="0.05" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-5" value="doWrite(chunk)&lt;br&gt;设置writing标记为true" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="740" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uPu4no5S3D1daFhYSbJ4-6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-2" target="uPu4no5S3D1daFhYSbJ4-5" edge="1">
@@ -24,12 +46,25 @@
             <mxPoint x="620" y="320" as="sourcePoint" />
             <mxPoint x="670" y="270" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="585" y="150" />
+              <mxPoint x="625" y="150" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-7" value="_write()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="960" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="s0zgl7CNudVJyAiepdLL-52" value="底层done" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="uPu4no5S3D1daFhYSbJ4-6">
+          <mxGeometry x="-0.3191" y="-18" relative="1" as="geometry">
+            <mxPoint x="18" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="uPu4no5S3D1daFhYSbJ4-7" target="uPu4no5S3D1daFhYSbJ4-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-63" value="回调" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#DAE8FC;" vertex="1" connectable="0" parent="s0zgl7CNudVJyAiepdLL-61">
+          <mxGeometry x="0.0111" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-7" value="_write()&lt;br&gt;调用底层I/O" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="887" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uPu4no5S3D1daFhYSbJ4-8" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-5" target="uPu4no5S3D1daFhYSbJ4-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -37,31 +72,41 @@
             <mxPoint x="490" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-9" value="onwrite()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-9" value="onwrite()&lt;br&gt;1. 设置wrting标记为false&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1067" y="120" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-7" target="uPu4no5S3D1daFhYSbJ4-9" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="870" y="160" as="sourcePoint" />
-            <mxPoint x="970" y="160" as="targetPoint" />
+        <mxCell id="s0zgl7CNudVJyAiepdLL-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uPu4no5S3D1daFhYSbJ4-11" target="s0zgl7CNudVJyAiepdLL-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-71" value="buffer已空" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="s0zgl7CNudVJyAiepdLL-69">
+          <mxGeometry x="-0.0125" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-11" value="afterWrite()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1320" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-11" value="afterWrite()&lt;br&gt;判断buffer是否有空位置" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1277" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-68" value="触发drain事件" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="120" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="uPu4no5S3D1daFhYSbJ4-12" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-9" target="uPu4no5S3D1daFhYSbJ4-11" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1090" y="160" as="sourcePoint" />
-            <mxPoint x="1150" y="160" as="targetPoint" />
+            <mxPoint x="1017" y="160" as="sourcePoint" />
+            <mxPoint x="1077" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uPu4no5S3D1daFhYSbJ4-13" value="clearBuffer()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="240" width="120" height="60" as="geometry" />
+          <mxGeometry x="1092" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-9" target="uPu4no5S3D1daFhYSbJ4-13" edge="1">
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-14" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="s0zgl7CNudVJyAiepdLL-80" target="uPu4no5S3D1daFhYSbJ4-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1090" y="160" as="sourcePoint" />
-            <mxPoint x="1150" y="160" as="targetPoint" />
+            <mxPoint x="1017" y="160" as="sourcePoint" />
+            <mxPoint x="1077" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-82" value="buffer还有数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="uPu4no5S3D1daFhYSbJ4-14">
+          <mxGeometry x="-0.0833" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="uPu4no5S3D1daFhYSbJ4-15" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="uPu4no5S3D1daFhYSbJ4-13" target="uPu4no5S3D1daFhYSbJ4-5" edge="1">
@@ -69,15 +114,17 @@
             <mxPoint x="870" y="160" as="sourcePoint" />
             <mxPoint x="970" y="160" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="800" y="270" />
+              <mxPoint x="800" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-16" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. 入口write函数，返回true代表buffer中的数据还未达到highWaterMark；如果返回false，代表已经满了；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. 如果buffer满了（即返回false）后，buffer又被清空了（数据写入完毕），会触发‘drain’事件；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. 当write()返回false时，我们不应该再继续调用write，而应该监听‘drain’；但是其实可以继续调用write，数据也会继续被buffer，直到达到内存的最大限制（这样肯定会影响性能，highWaterMark也就失去了意义）；&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="380" width="610" height="120" as="geometry" />
+        <mxCell id="s0zgl7CNudVJyAiepdLL-67" value="持续调用_write()，向底层写数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="uPu4no5S3D1daFhYSbJ4-15">
+          <mxGeometry x="-0.0248" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="uPu4no5S3D1daFhYSbJ4-17" value="buffer，" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="390" width="120" height="60" as="geometry" />
+        <mxCell id="uPu4no5S3D1daFhYSbJ4-16" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. 入口write函数，返回true代表buffer中的数据还未达到highWaterMark；如果返回false，代表已经满了；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. 如果buffer满了（即返回false）后，buffer又被清空了（数据写入完毕），会触发‘drain’事件；&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. 当write()返回false时，我们不应该再继续调用write，而应该监听‘drain’；但是其实可以继续调用write，数据也会继续被buffer，直到达到内存的最大限制（这样肯定会影响性能，highWaterMark也就失去了意义）；&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="204" y="510" width="610" height="120" as="geometry" />
         </mxCell>
         <mxCell id="s0zgl7CNudVJyAiepdLL-1" value="从使用角度" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="240" y="710" width="120" height="60" as="geometry" />
@@ -90,6 +137,111 @@
         </mxCell>
         <mxCell id="s0zgl7CNudVJyAiepdLL-4" value="pipe()函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-5" value="1. 将可读流自动切换的流动模式；&lt;br&gt;&lt;div&gt;&lt;span&gt;2. 数据流会自动管理，所以即使可读流更快，目标可写流也不会超负荷；&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="640" y="830" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-6" value="read()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-9" value="maybeReadMore" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-10" target="s0zgl7CNudVJyAiepdLL-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-10" value="on()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-11" target="s0zgl7CNudVJyAiepdLL-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-11" value="如果监听‘data’函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-13" target="s0zgl7CNudVJyAiepdLL-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-13" value="flowing!=false" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-15" target="s0zgl7CNudVJyAiepdLL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-15" value="resume()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-19" target="s0zgl7CNudVJyAiepdLL-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-19" value="可控的（js）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-20" value="写入底层（不可控的/慢的）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1700" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-22" value="可写流" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1690" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-25" value="可读流" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1810" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-28" target="s0zgl7CNudVJyAiepdLL-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-28" value="从底层读（不可控/慢）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1820" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-30" value="可控的（js）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1820" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-32" target="s0zgl7CNudVJyAiepdLL-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-32" target="s0zgl7CNudVJyAiepdLL-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-45" value="调用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="s0zgl7CNudVJyAiepdLL-36">
+          <mxGeometry x="-0.1667" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-32" value="writable.write(chunk)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-35" target="s0zgl7CNudVJyAiepdLL-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-35" value="_write(buffer_chunk)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-40" value="写入底层" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="s0zgl7CNudVJyAiepdLL-33" target="s0zgl7CNudVJyAiepdLL-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-33" value="buffer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-46" value="数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1186" y="1359" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-48" value="buffer中的数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="1420" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-80" value="&lt;div&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;判断buffer是否被清空&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=#DAE8FC;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1112" y="212" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0zgl7CNudVJyAiepdLL-81" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uPu4no5S3D1daFhYSbJ4-9" target="s0zgl7CNudVJyAiepdLL-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1152" y="180" as="sourcePoint" />
+            <mxPoint x="1152" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
